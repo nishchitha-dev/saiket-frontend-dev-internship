@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSprint Bootcamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>CodeSprint</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+
+        <h1>Become a Full Stack Developer</h1>
+
+        <p>
+            Learn HTML, CSS, JavaScript,
+            React and AI Integration.
+        </p>
+
+        <button id="enrollBtn">
+            Enroll Now
+        </button>
+
+    </section>
+
+    <section id="courses">
+
+        <h2>Courses Offered</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>Full Stack Development</h3>
+                <p>MERN Stack</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Fundamentals</h3>
+                <p>Prompt Engineering & AI Tools</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="stats">
+
+        <div>
+            <h2 id="students">0</h2>
+            <p>Students Trained</p>
+        </div>
+
+        <div>
+            <h2 id="projects">0</h2>
+            <p>Projects Completed</p>
+        </div>
+
+    </section>
+
+    <section id="reviews">
+
+        <h2>Student Testimonials</h2>
+
+        <div class="card">
+            <p>
+                "The bootcamp helped me land my first internship."
+            </p>
+            <h4>- Student</h4>
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <button onclick="submitForm()">
+            Submit
+        </button>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 CodeSprint Bootcamp
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
