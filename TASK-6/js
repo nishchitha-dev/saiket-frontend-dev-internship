@@ -1,0 +1,52 @@
+document
+    .getElementById("enrollBtn")
+    .addEventListener("click", () => {
+
+        alert(
+            "Enrollment page coming soon!"
+        );
+
+    });
+
+function animateValue(id, target) {
+
+    let count = 0;
+
+    const interval = setInterval(() => {
+
+        count += 10;
+
+        document.getElementById(id)
+            .textContent = count;
+
+        if (count >= target) {
+            clearInterval(interval);
+        }
+
+    }, 20);
+}
+
+animateValue("students", 500);
+animateValue("projects", 120);
+
+function submitForm() {
+
+    const name =
+        document.getElementById("name").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    if (name === "" || email === "") {
+
+        alert(
+            "Please fill all fields"
+        );
+
+        return;
+    }
+
+    alert(
+        ' Thank you ${name} for contacting us!'
+    );
+}
